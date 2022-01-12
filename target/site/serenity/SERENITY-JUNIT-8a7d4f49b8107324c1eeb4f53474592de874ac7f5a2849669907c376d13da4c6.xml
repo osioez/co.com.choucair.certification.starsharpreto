@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Login to starsharp to create business unit and schedule meetings" skipped="0" tests="3" time="24.73" timestamp="2022-01-08 08:03:40"><testcase name="Login to starsharp"/><testcase name="Creating a business unit"/><testcase name="Create a meeting"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+co.com.choucair.certification.starsharpreto.tasks.Program.aMeeting(Program.java:53)&#13;
+co.com.choucair.certification.starsharpreto.stepdefinitions.StepDefinitionsStarSharp.userWillThenBeAbleToCreateAMeeting(StepDefinitionsAuthentication.java:63)&#13;
+✽.User will then be able to create a meeting(src/test/resources/features/starSharp.feature:27)&#13;
+</system-err></testcase></testsuite>

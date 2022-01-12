@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Login to starsharp to create business unit and schedule meetings" skipped="0" tests="2" time="17.14" timestamp="2022-01-08 08:11:01"><testcase name="Creating a business unit"/><testcase name="Create a meeting"><error message="Index: 0, Size: 0" type="java.lang.IndexOutOfBoundsException">Index: 0, Size: 0</error><system-err>Index: 0, Size: 0&#13;
+co.com.choucair.certification.starsharpreto.stepdefinitions.StepDefinitionsStarSharp.userWillThenBeAbleToCreateAMeeting(StepDefinitionsAuthentication.java:64)&#13;
+✽.User will then be able to create a meeting(src/test/resources/features/starSharp.feature:27)&#13;
+</system-err></testcase></testsuite>
