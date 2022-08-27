@@ -36,3 +36,47 @@ dependencies {
 }
 
 gradle.startParameter.continueOnFailure = true
+
+plugins {
+  id "com.microsoft.azure.azurewebapp" version "1.2.0"
+}
+
+azurewebapp {
+    subscription = '<your subscription id>'
+    resourceGroup = '<your resource group>'
+    appName = '<your app name>'
+    pricingTier = '<price tier like 'P1v2'>'
+    region = '<region like 'westus'>'
+    runtime {
+      os = 'Linux'
+      webContainer = 'Tomcat 9.0' // or 'Java SE' if you want to run an executable jar
+      javaVersion = 'Java 8'
+    }
+    appSettings {
+        <key> = <value>
+    }
+    auth {
+        type = 'azure_cli' // support azure_cli, oauth2, device_code and service_principal
+    }
+}
+
+azurewebapp {
+  subscription = "<your subscription id>"
+  resourceGroup = "<your resource group>"
+  appName = "<your app name>"
+  pricingTier = "<price tier like 'P1v2'>"
+  region = "<region like 'westus'>"
+  setRuntime(closureOf<com.microsoft.azure.gradle.configuration.GradleRuntimeConfig> {
+    os("Linux")
+    webContainer("Java SE")
+    javaVersion("Java 11")
+  })
+  setAppSettings(closureOf<MutableMap<String, String>> {
+    put("key", "value")
+  })
+  setAuth(closureOf<com.microsoft.azure.gradle.auth.GradleAuthConfig> {
+    type = "azure_cli"
+  })
+}
+
+
